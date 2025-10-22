@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SKYPUMP — $SKYPUMP</title>
+  <meta name="description" content="SKYPUMP — Events, stunts & nonstop momentum." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* marquee animation */
+    @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  </style>
+</head>
+<body class="min-h-screen text-slate-900 selection:bg-cyan-200" style="background-color:#E9F1F6">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/80 backdrop-blur">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
+      <span class="text-lg font-semibold tracking-tight text-[#0B1E2A]">
+        SKYPUMP <span class="text-cyan-600">$SKYPUMP</span>
+      </span>
+      <a href="#add-pumpfun-link"
+         class="inline-flex items-center gap-2 rounded-xl bg-cyan-600 px-4 py-2 text-sm font-semibold text-white hover:bg-cyan-500">
+        Buy $SKYPUMP
+        <!-- ArrowRight -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <!-- subtle glow blobs -->
+    <div class="pointer-events-none absolute -inset-32 rounded-full blur-3xl opacity-25 bg-gradient-to-tr from-sky-400 via-cyan-500 to-emerald-400 -top-20 left-10"></div>
+    <div class="pointer-events-none absolute -inset-32 rounded-full blur-3xl opacity-25 bg-gradient-to-tr from-sky-400 via-cyan-500 to-emerald-400 top-40 right-0"></div>
+
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 items-center gap-10 py-20 md:grid-cols-2">
+      <div class="space-y-6">
+        <span class="inline-flex items-center gap-2 rounded-full bg-emerald-100 px-3 py-1 text-xs text-emerald-700">
+          <!-- Zap -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+          Live now · Trending on-chain
+        </span>
+
+        <h1 class="text-5xl font-black bg-gradient-to-r from-sky-400 via-cyan-500 to-emerald-400 bg-clip-text text-transparent">
+          $SKYPUMP takes it to the sky
+        </h1>
+        <p class="text-slate-700 max-w-md">Events, stunts & nonstop momentum.</p>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="#add-pumpfun-link"
+             class="inline-flex items-center gap-2 rounded-xl bg-cyan-600 px-5 py-3 text-sm font-semibold text-white hover:bg-cyan-500">
+            Buy on Pump.fun
+            <!-- ArrowRight -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </a>
+          <a href="#add-dexscreener-link"
+             class="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-[#0B1E2A] hover:bg-slate-50">
+            View Chart
+            <!-- ChartNoAxesCombined -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 3v18h18M7 15l3-3 4 4 5-6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="relative overflow-hidden rounded-2xl border shadow-sm" style="border-color: rgba(11,30,42,0.08); background-color: rgba(255,255,255,0.65)">
+        <div class="p-6 text-center">
+          <img src="/skypump-hero-3x1.png" alt="SKYPUMP banner" class="mx-auto mb-4 max-h-40 object-contain" />
+          <p class="text-slate-600 text-sm">Live chart or stream embed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="border-y border-slate-200 bg-white py-3 text-sm overflow-hidden">
+    <div class="whitespace-nowrap" style="animation: marquee 22s linear infinite;">
+      <span class="mx-6 text-slate-700">$SKYPUMP · Fair Launch</span>
+      <span class="mx-6 text-slate-700">IRL stunts</span>
+      <span class="mx-6 text-slate-700">Renounced · LP Locked</span>
+      <span class="mx-6 text-slate-700">Community first</span>
+      <!-- repeat for seamless loop -->
+      <span class="mx-6 text-slate-700">$SKYPUMP · Fair Launch</span>
+      <span class="mx-6 text-slate-700">IRL stunts</span>
+      <span class="mx-6 text-slate-700">Renounced · LP Locked</span>
+      <span class="mx-6 text-slate-700">Community first</span>
+    </div>
+  </div>
+
+  <!-- EVENTS & STUNTS -->
+  <section id="events" class="py-20" style="background:#DDECF2">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-6 text-[#0B1E2A]">Events &amp; Stunts</h2>
+      <div class="grid gap-4 md:grid-cols-2">
+        <!-- Card 1 -->
+        <div class="relative overflow-hidden rounded-2xl border shadow-sm p-6" style="border-color: rgba(11,30,42,0.08); background-color: rgba(255,255,255,0.65)">
+          <div class="mb-2 text-sm text-slate-600">#1</div>
+          <div class="text-xl font-bold text-[#0B1E2A]">Manhattan Bridge</div>
+          <div class="mt-1 text-xs text-slate-500">Completed</div>
+          <a href="#video-link"
+             class="mt-4 inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-[#0B1E2A] hover:bg-slate-50">
+            Watch clip
+            <!-- Play -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-cyan-600" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </a>
+        </div>
+        <!-- Card 2 -->
+        <div class="relative overflow-hidden rounded-2xl border shadow-sm p-6" style="border-color: rgba(11,30,42,0.08); background-color: rgba(255,255,255,0.65)">
+          <div class="mb-2 text-sm text-slate-600">#2</div>
+          <div class="text-xl font-bold text-[#0B1E2A]">Next stunt...</div>
+          <div class="mt-1 text-xs text-slate-500">TBA</div>
+          <a href="#"
+             class="mt-4 inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-[#0B1E2A] hover:bg-slate-50">
+            Watch clip
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-cyan-600" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO BUY -->
+  <section id="how-to-buy" class="py-20">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-8 text-center text-[#0B1E2A]">How to Buy</h2>
+      <div class="grid gap-4 md:grid-cols-4">
+        <!-- Step -->
+        <div class="relative overflow-hidden rounded-2xl border shadow-sm p-6 text-center" style="border-color: rgba(11,30,42,0.08); background-color: rgba(255,255,255,0.65)">
+          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-100 mx-auto text-cyan-700">
+            <!-- Shield -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 class="mb-1 text-lg font-semibold text-[#0B1E2A]">Create a Wallet</h3>
+          <p class="text-sm text-slate-600">Install Phantom Wallet (App Store or Chrome).</p>
+        </div>
+        <!-- Step -->
+        <div class="relative overflow-hidden rounded-2xl border shadow-sm p-6 text-center" style="border-color: rgba(11,30,42,0.08); background-color: rgba(255,255,255,0.65)">
+          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-100 mx-auto text-cyan-700">
+            <!-- Rocket -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-width="2" d="M5 13l4 4L19 7M2 22l6-6"/>
+            </svg>
+          </div>
+          <h3 class="mb-1 text-lg font-semibold text-[#0B1E2A]">Fund It</h3>
+          <p class="text-sm text-slate-600">Buy SOL on a CEX and send to Phantom.</p>
+        </div>
+        <!-- Step -->
+        <div class="relative overflow-hidden rounded-2xl border shadow-sm p-6 text-center" style="border-color: rgba(11,30,42,0.08); background-color: rgba(255,255,255,0.65)">
+          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-100 mx-auto text-cyan-700">
+            <!-- Zap -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3 class="mb-1 text-lg font-semibold text-[#0B1E2A]">Go to Pump.fun</h3>
+          <p class="text-sm text-slate-600">Click Buy above or paste contract.</p>
+        </div>
+        <!-- Step -->
+        <div class="relative overflow-hidden rounded-2xl border shadow-sm p-6 text-center" style="border-color: rgba(11,30,42,0.08); background-color: rgba(255,255,255,0.65)">
+          <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-100 mx-auto text-cyan-700">
+            <!-- ArrowRight -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </div>
+          <h3 class="mb-1 text-lg font-semibold text-[#0B1E2A]">Swap &amp; HODL</h3>
+          <p class="text-sm text-slate-600">Set slippage 0.5–1%, confirm, add token.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIALS -->
+  <section id="socials" class="py-20 bg-white">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-10 text-center text-[#0B1E2A]">Join the Community</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="https://x.com/Skypumpp" target="_blank" rel="noopener noreferrer"
+           class="rounded-xl bg-cyan-600 text-white px-6 py-3 font-semibold hover:bg-cyan-500">
+          Follow on X
+        </a>
+        <a href="https://x.com/i/communities/1980492087351988476" target="_blank" rel="noopener noreferrer"
+           class="rounded-xl border border-slate-200 bg-white px-6 py-3 font-semibold text-[#0B1E2A] hover:bg-slate-50">
+          X Community
+        </a>
+        <a href="#add-pumpfun-link" target="_blank" rel="noopener noreferrer"
+           class="rounded-xl border border-slate-200 bg-white px-6 py-3 font-semibold text-[#0B1E2A] hover:bg-slate-50">
+          Pump.fun Page
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section id="roadmap" class="py-20" style="background:#DDECF2">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-10 text-[#0B1E2A]">Roadmap</h2>
+      <div class="grid gap-4 md:grid-cols-3">
+        <!-- Phase -->
+        <div class="relative overflow-hidden rounded-2xl border shadow-sm p-6" style="border-color: rgba(11,30,42,0.08); background-color: rgba(255,255,255,0.65)">
+          <div class="mb-3 text-sm font-semibold text-slate-600">Phase 1 · Launch</div>
+          <ul class="space-y-2 text-sm text-[#0B1E2A]">
+            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-500"></span> Deploy contract</li>
+            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-500"></span> Website + socials live</li>
+            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-500"></span> First stunt</li>
+          </ul>
+        </div>
+        <div class="relative overflow-hidden rounded-2xl border shadow-sm p-6" style="border-color: rgba(11,30,42,0.08); background-color: rgba(255,255,255,0.65)">
+          <div class="mb-3 text-sm font-semibold text-slate-600">Phase 2 · Expansion</div>
+          <ul class="space-y-2 text-sm text-[#0B1E2A]">
+            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-500"></span> DEX trending</li>
+            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-500"></span> Second stunt</li>
+            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-500"></span> Marketing</li>
+          </ul>
+        </div>
+        <div class="relative overflow-hidden rounded-2xl border shadow-sm p-6" style="border-color: rgba(11,30,42,0.08); background-color: rgba(255,255,255,0.65)">
+          <div class="mb-3 text-sm font-semibold text-slate-600">Phase 3 · Global</div>
+          <ul class="space-y-2 text-sm text-[#0B1E2A]">
+            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-500"></span> CEX outreach</li>
+            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-500"></span> Merch + IRL</li>
+            <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-500"></span> More chaos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-8 text-[#0B1E2A]">FAQ</h2>
+      <div class="grid gap-4 md:grid-cols-2">
+        <div class="relative overflow-hidden rounded-2xl border shadow-sm p-6" style="border-color: rgba(11,30,42,0.08); background-color: rgba(255,255,255,0.65)">
+          <div class="mb-1 inline-flex items-center gap-2 text-sm font-semibold text-slate-700">
+            <!-- CircleHelp -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-width="2" d="M12 8a3 3 0 013 3c0 2-3 2-3 4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            Is there a presale?
+          </div>
+          <p class="text-slate-700">No. $SKYPUMP launched fairly on Solana — no presale, no team wallets.</p>
+        </div>
+        <div class="relative overflow-hidden rounded-2xl border shadow-sm p-6" style="border-color: rgba(11,30,42,0.08); background-color: rgba(255,255,255,0.65)">
+          <div class="mb-1 inline-flex items-center gap-2 text-sm font-semibold text-slate-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-width="2" d="M12 8a3 3 0 013 3c0 2-3 2-3 4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            Where can I buy?
+          </div>
+          <p class="text-slate-700">Directly on Pump.fun using the button above.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="relative py-20">
+    <div class="pointer-events-none absolute -inset-32 rounded-full blur-3xl opacity-25 bg-gradient-to-tr from-sky-400 via-cyan-500 to-emerald-400 -top-20 left-10"></div>
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="relative overflow-hidden rounded-2xl border shadow-sm p-10 text-center"
+           style="border-color: rgba(11,30,42,0.08); background-color: rgba(255,255,255,0.65)">
+        <h2 class="text-3xl font-black text-[#0B1E2A]">Ready for the next stunt?</h2>
+        <p class="mx-auto mt-2 max-w-2xl text-slate-700">Join $SKYPUMP — the token turning IRL stunts into web3 energy.</p>
+        <div class="mt-6 flex justify-center gap-3">
+          <a href="#add-pumpfun-link"
+             class="inline-flex items-center gap-2 rounded-xl bg-cyan-600 px-5 py-3 text-sm font-semibold text-white hover:bg-cyan-500">
+            Buy Now
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </a>
+          <a href="https://x.com/Skypumpp" target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-[#0B1E2A] hover:bg-slate-50">
+            Follow on X
+            <!-- Twitter (bird) simplified -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-cyan-600" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23 3c-1 .5-2 .8-3.1.9A4.5 4.5 0 0012 7.5v.7A12.8 12.8 0 013 4s-4 9 5 13a13.7 13.7 0 01-8 2c9 5 20 0 20-11.5 0-.3 0-.7-.1-1A7.7 7.7 0 0023 3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 py-10 text-sm text-slate-600 bg-white/80 backdrop-blur">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-between gap-4 md:flex-row">
+      <div>© <span id="year"></span> SKYPUMP. All rights reserved.</div>
+      <div class="flex items-center gap-5">
+        <a href="https://x.com/Skypumpp" class="hover:text-cyan-700" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://x.com/i/communities/1980492087351988476" class="hover:text-cyan-700" target="_blank" rel="noopener noreferrer">X Community</a>
+        <a href="#add-pumpfun-link" class="hover:text-cyan-700" target="_blank" rel="noopener noreferrer">Pump.fun</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
